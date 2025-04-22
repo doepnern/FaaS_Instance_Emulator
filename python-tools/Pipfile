@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+matplotlib = "*"
+numpy = "*"
+ipykernel = "*"
+pandas = "*"
+seaborn = "*"
+scikit-learn = "*"
+jinja2 = "*"
+distfit = "*"
+typing-extensions = "*"
+exceptiongroup = "*"
+
+[dev-packages]
+ipykernel = "*"
+
+[requires]
+python_version = "3"

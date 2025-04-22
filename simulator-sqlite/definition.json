@@ -1,0 +1,30 @@
+{
+  "name": "simulator",
+  "networkLatency": 0,
+  "functionProfiles": [
+    {
+      "name": "go-factorial",
+      "responseDistribution": {
+        "s": 0.8473746934791042,
+        "loc": 7.714621632388471,
+        "scale": 1.071847655475082
+      },
+      "replicas": 32,
+      "instanceConstraints": [
+        {
+          "resouce": "parallelism",
+          "amount": 2,
+          "resourcePerRequest": 1,
+          "durationMultiplicator": 2
+        }
+      ],
+      "responsePayload": {}
+    }
+  ],
+  "globalConstraints": [
+    {
+      "resouce": "parallelism",
+      "amount": 7
+    }
+  ]
+}

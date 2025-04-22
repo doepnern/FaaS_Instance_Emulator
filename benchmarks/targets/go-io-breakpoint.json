@@ -1,0 +1,51 @@
+{
+	"name": "go-io",
+	"payload": {
+		"n": 300,
+		"size": 100
+	},
+	"docker_image_name": "go-io",
+	"docker_image_port": "8080",
+	"replicas": 1,
+	"constraints": {
+		"cpus": "1",
+		"memory": "512m"
+	},
+	"benchmarks": [
+		{
+			"type": "breakpoint",
+			"replicas": 1,
+			"name": "1",
+			"options": {
+				"target": 200
+			}
+		},
+		{
+			"type": "breakpoint",
+			"replicas": 8,
+			"name": "8",
+			"options": {
+				"target": 800
+			}
+		},
+		{
+			"type": "breakpoint",
+			"replicas": 16,
+			"name": "16",
+			"options": {
+				"target": 800
+			}
+		},
+		{
+			"type": "breakpoint",
+			"replicas": 32,
+			"name": "32",
+			"options": {
+				"target": 800
+			}
+		}
+	],
+	"response": {
+		"data": "50000"
+	}
+}

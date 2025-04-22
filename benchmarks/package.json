@@ -1,0 +1,19 @@
+{
+  "name": "benchmarks",
+  "type": "module",
+  "scripts": {
+    "benchmark": "bun run ./src/benchmark-docker-image.ts",
+    "benchmark-mock": "bun run ./src/benchmark-mock-server.ts",
+    "thesis": "bun run ./src/thesis-full.ts"
+  },
+  "dependencies": {
+    "@influxdata/influxdb-client": "^1.35.0",
+    "@types/bun": "^1.1.13",
+    "@types/node": "^22.9.0",
+    "date-fns": "^4.1.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4"
+  }
+}

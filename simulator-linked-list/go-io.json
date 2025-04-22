@@ -1,0 +1,32 @@
+{
+  "name": "simulator",
+  "networkLatency": 0,
+  "functionProfiles": [
+    {
+      "name": "go-io",
+      "responseDistributions": [
+        {
+          "s": 0.8102494606273993,
+          "loc": 17.60907847891561,
+          "scale": 5.070058441098443
+        },
+        {
+          "s": 0.6597772662353057,
+          "loc": 17.575815470422253,
+          "scale": 4.44051047411946
+        },
+        {
+          "s": 0.9849503566040331,
+          "loc": 17.663096867854776,
+          "scale": 8.139647879051644
+        }
+      ],
+      "maxRps": 30,
+      "maxHostRps": 98,
+      "replicas": 32,
+      "responsePayload": {
+        "data": "50000"
+      }
+    }
+  ]
+}

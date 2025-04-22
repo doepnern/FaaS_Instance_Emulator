@@ -1,0 +1,15 @@
+{
+  "name": "batcheloarthesis_faas",
+  "type": "module",
+  "scripts": {},
+  "dependencies": {
+    "@types/bun": "^1.1.13",
+    "@types/node": "^22.9.0"
+  },
+  "workspaces": [
+    "benchmarks"
+  ],
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4"
+  }
+}

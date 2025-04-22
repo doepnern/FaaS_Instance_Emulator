@@ -1,0 +1,30 @@
+{
+  "name": "simulator",
+  "networkLatency": 0,
+  "functionProfiles": [
+    {
+      "name": "go-string-reversal",
+      "responseDistribution": {
+        "s": 0.45033724854737606,
+        "loc": 16.60492402411791,
+        "scale": 6.327082146604109
+      },
+      "replicas": 32,
+      "instanceConstraints": [
+        {
+          "resouce": "parallelism",
+          "amount": 1,
+          "resourcePerRequest": 1,
+          "durationMultiplicator": 2.734866626461939
+        }
+      ],
+      "responsePayload": {}
+    }
+  ],
+  "globalConstraints": [
+    {
+      "resouce": "parallelism",
+      "amount": 4
+    }
+  ]
+}

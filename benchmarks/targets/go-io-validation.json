@@ -1,0 +1,27 @@
+{
+	"name": "go-io",
+	"payload": {
+		"n": 300,
+		"size": 100
+	},
+	"docker_image_name": "go-io",
+	"docker_image_port": "8080",
+	"replicas": 1,
+	"constraints": {
+		"cpus": "1",
+		"memory": "512m"
+	},
+	"benchmarks": [
+		{
+			"replicas": 32,
+			"name": "32",
+			"options": {
+				"maxRps": 32,
+				"maxHostRps": 98
+			}
+		}
+	],
+	"response": {
+		"data": "50000"
+	}
+}

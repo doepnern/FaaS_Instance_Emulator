@@ -1,0 +1,23 @@
+{
+	"name": "go-string-reversal",
+	"payload": {
+		"n": 3000
+	},
+	"docker_image_name": "go-string-reversal",
+	"docker_image_port": "8080",
+	"replicas": 1,
+	"constraints": {
+		"cpus": "1",
+		"memory": "512m"
+	},
+	"benchmarks": [
+		{
+			"replicas": 32,
+			"name": "32",
+			"options": {
+				"maxRps": 65,
+				"maxHostRps": 300
+			}
+		}
+	]
+}

@@ -1,0 +1,47 @@
+{
+	"name": "go-string-reversal",
+	"payload": {
+		"n": 3000
+	},
+	"docker_image_name": "go-string-reversal",
+	"docker_image_port": "8080",
+	"replicas": 1,
+	"constraints": {
+		"cpus": "1",
+		"memory": "512m"
+	},
+	"benchmarks": [
+		{
+			"type": "breakpoint",
+			"replicas": 1,
+			"name": "1",
+			"options": {
+				"target": 250
+			}
+		},
+		{
+			"type": "breakpoint",
+			"replicas": 8,
+			"name": "8",
+			"options": {
+				"target": 1000
+			}
+		},
+		{
+			"type": "breakpoint",
+			"replicas": 16,
+			"name": "16",
+			"options": {
+				"target": 1000
+			}
+		},
+		{
+			"type": "breakpoint",
+			"replicas": 32,
+			"name": "32",
+			"options": {
+				"target": 1000
+			}
+		}
+	]
+}

@@ -1,0 +1,7 @@
+specVersion: 0.36.0
+name: go-io
+runtime: go
+image: go-io
+created: 2024-11-24T12:14:22.357370198+01:00
+build:
+  builder: pack
